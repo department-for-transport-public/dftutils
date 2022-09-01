@@ -8,7 +8,7 @@ The package can be installed directly from Github using the remotes install_gith
 
 ```
 install.packages("remotes")
-remotes::install_github("department-for-transport/dftutils")
+remotes::install_github("department-for-transport-public/dftutils")
 ```
 
 ## Overview
