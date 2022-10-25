@@ -16,6 +16,7 @@
 #' @param italic TRUE or FALSE if you want text to be italic
 #' @param underlined TRUE or FALSE if you want text to be underlined
 #'
+#' @name addSuperScriptToCell
 #' @export
 #' @importFrom openxlsx writeData
 #' @importFrom stringr str_sub

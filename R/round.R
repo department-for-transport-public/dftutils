@@ -5,6 +5,7 @@
 #' @param digits integer indicating the number of decimal places.
 #' Negative values are allowed; Rounding to a negative number of digits means rounding to a power of ten, so for example round(x, digits = -2) rounds to the nearest hundred.
 #'
+#' @name round
 #' @export
 
 round <- function(x, digits = 0){

@@ -9,6 +9,7 @@
 #' @param ignore.case logical. Should pattern-matching be case-insensitive?
 #' Defaults to FALSE
 #'
+#' @name recent_file
 #' @export
 
 recent_file <- function(filepath,
