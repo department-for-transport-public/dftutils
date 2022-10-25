@@ -5,7 +5,7 @@
 #' to connect to
 #'
 #' @importFrom odbc odbc
-#' @importFrom DBI dbconnect dbCanConnect
+#' @importFrom DBI dbConnect dbCanConnect
 #' @name sqlConnect
 #' @export
 
