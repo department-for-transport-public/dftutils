@@ -9,6 +9,14 @@
     ]
   },
   "Packages": {
+    "DBI": {
+      "Package": "DBI",
+      "Version": "1.1.2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "dcd1743af4336156873e3ce3c950b8b9",
+      "Requirements": []
+    },
     "Rcpp": {
       "Package": "Rcpp",
       "Version": "1.0.8.3",
@@ -25,26 +33,6 @@
       "Hash": "4f2596dfb05dac67b9dc558e5c6fba2e",
       "Requirements": []
     },
-    "magrittr": {
-      "Package": "magrittr",
-      "Version": "2.0.3",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Hash": "7ce2733a9826b3aeb1775d56fd305472",
-      "Requirements": []
-    },
-    "openxlsx": {
-      "Package": "openxlsx",
-      "Version": "4.2.5",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Hash": "fc5e0e85d3a1e4282f04f303627b7e72",
-      "Requirements": [
-        "Rcpp",
-        "stringi",
-        "zip"
-      ]
-    },
     "renv": {
       "Package": "renv",
       "Version": "0.15.5",
@@ -59,26 +47,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "5dbdecb4be00ccaa0c517bd21d583e97",
-      "Requirements": []
-    },
-    "stringr": {
-      "Package": "stringr",
-      "Version": "1.4.0",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Hash": "0759e6b6c0957edb1311028a49a35e76",
-      "Requirements": [
-        "glue",
-        "magrittr",
-        "stringi"
-      ]
-    },
-    "zip": {
-      "Package": "zip",
-      "Version": "2.2.0",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Hash": "c7eef2996ac270a18c2715c997a727c5",
       "Requirements": []
     }
   }
