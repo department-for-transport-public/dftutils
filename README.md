@@ -18,4 +18,6 @@ The package contains the following functions:
 * `addSuperScriptToCell`: function to present text as superscript values in Excel workbooks.
 * `recent_file`: Search function to find most recently updated file in a given directory.
 * `round`: Mathematical rounding function which rounds values which end in 5 up, in contrast to the default behaviour of R (round to even).
-* `writeClipboard`: write a data frame to an appropriately sized clipboard in Windows.
+* `writeClipboard`: Write a data frame to an appropriately sized clipboard in Windows.
+* `sqlConnect`: Connection string to a SQL server using odbc.
+* `convert_to_ods`: Automatic conversion of xlsx files to ods in Cloud R.

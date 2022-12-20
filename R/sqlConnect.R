@@ -11,11 +11,6 @@
 
 sqlConnect <- function(server, database) {
 
-  #Pick out instances of erroring server names
-  if(grepl("jeni", server, ignore.case = TRUE)){
-    stop("Jeni isn't here right now. But if she was, she would say hi")
-  }
-
   ##Checks if it's possible to connect to server specified
   check <- DBI::dbCanConnect(odbc::odbc(),
                              Driver = "{ODBC Driver 17 for SQL Server}",
