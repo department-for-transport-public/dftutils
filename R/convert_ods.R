@@ -14,14 +14,14 @@ convert_to_ods <- function(file, folder = getwd()){
          For Windows machines, use the odsconvertr package instead")
   }
 
-  if(!dir.exists(folder)){
+  if(!dir.exists(suppressWarnings(normalizePath(folder)))){
 
-    stop(folder, "does not exist")
+    stop(folder, " does not exist")
   }
 
-  if(!file.exists(normalizePath(file.path(folder, file)))){
+  if(!file.exists(suppressWarnings(normalizePath(file.path(folder, file))))){
 
-    stop(file, "does not exist in the specified folder")
+    stop(file, " does not exist in the specified folder")
   }
 
   ##Pass command to system
