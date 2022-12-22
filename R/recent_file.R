@@ -24,6 +24,9 @@ recent_file <- function(filepath,
              full.names = TRUE,
              ignore.case = ignore.case)
 
+  ##Drop any and all temp files
+  files <- files[!grepl("^[~][$]", files)]
+
   ##Get file info for listed files
   files <- file.info(files)
 
