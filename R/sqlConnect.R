@@ -4,8 +4,6 @@
 #' @param database string. Name of the database within the server you would like
 #' to connect to
 #'
-#' @importFrom odbc odbc
-#' @importFrom DBI dbConnect dbCanConnect
 #' @name sqlConnect
 #' @export
 
