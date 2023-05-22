@@ -11,6 +11,16 @@
 
 sqlConnect <- function(server, database) {
 
+  if (!requireNamespace("odbc", quietly = TRUE)) {
+    warning("The odbc package must be installed to use this functionality")
+    #Either exit or do something without rgl
+    return(NULL)
+  }else if (!requireNamespace("DBI", quietly = TRUE)) {
+    warning("The DBI package must be installed to use this functionality")
+    #Either exit or do something without rgl
+    return(NULL)
+  } else{
+
   ##Checks if it's possible to connect to server specified
   check <- DBI::dbCanConnect(odbc::odbc(),
                              Driver = "{ODBC Driver 17 for SQL Server}",
@@ -29,4 +39,5 @@ sqlConnect <- function(server, database) {
                  Trusted_Connection = "yes",
                  Database = database)
 
+  }
 }
