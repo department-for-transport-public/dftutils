@@ -21,5 +21,6 @@ The package contains the following functions:
 * `writeClipboard`: Write a data frame to an appropriately sized clipboard in Windows.
 * `sqlConnect`: Connection string to a SQL server using odbc.
 * `convert_to_ods`: Automatic conversion of xlsx files to ods in Cloud R.
+* `clean_metadata`: Remove personal information from the metadata of an ODS file and add tags if you want.
 * `list_sharepoint_drives`: Find the names of Sharepoint drives on your Sharepoint site.
 * `import_sharepoint`: Import a file stored on Sharepoint into Cloud R for use.
