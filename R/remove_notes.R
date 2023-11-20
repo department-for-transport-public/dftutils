@@ -15,12 +15,16 @@ remove_notes <- function(data, trim = TRUE) {
   names_before <- names(data)
 
   #Remove [note x] from column names
-  d <- dplyr::rename_with(data, ~ stringr::str_replace(., "\\[.*", ""))
+
+  d <- dplyr::rename_with( #Apply this to all columns
+    data, ~ stringr::str_replace( #Take the data as an argument, and replace
+      ., "\\[.*", "") #Starting from a left square bracket, remove all text afterwards
+  )
 
   if(trim == TRUE) {
     #Trim whitespace
     d <- d %>%
-      dplyr::rename_with(stringr::str_trim)
+      dplyr::rename_with(stringr::str_trim) #Remove whitespace from all columns
   }
 
   #Get list of column names after removing notes
