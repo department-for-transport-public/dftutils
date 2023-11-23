@@ -1,17 +1,18 @@
 Package: dftutils
 Type: Package
 Title: Utility Functions for DfT R Coding Projects
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: 
     c(
     person("Francesca", "Bryden", , "francesca.bryden@dft.gov.uk", role = c("aut", "cre")),
-    person("Jeni", "Martin", , "jeni.martin@dft.gov.uk", role = c("aut")))
+    person("Jeni", "Martin", , "jeni.martin@dft.gov.uk", role = c("aut")),
+    person("Charlie", "Howe", , "charlie.howe@dft.gov.uk", role = c("aut")))
 Description: Package of basic utility functions which have broad applications across R coding packages.
 License: MIT + file LICENSE
-Depends: openxlsx, stringr, zip, xml2, magrittr, Microsoft365R
+Depends: openxlsx, stringr, zip, xml2, magrittr, Microsoft365R, dplyr, openxlsx, data.table
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
