@@ -9,7 +9,7 @@ clean_metadata(file, tags = NULL)
 \arguments{
 \item{file}{name of an ods file to edit the metadata}
 
-\item{tags}{optional tags to add to the file. Defaults to}
+\item{tags}{optional tags to add to the file. Defaults to NULL}
 }
 \description{
 Remove creator names from the metadata of an ods file and add new tags if wanted
