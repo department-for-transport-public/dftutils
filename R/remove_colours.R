@@ -5,7 +5,7 @@
 #'
 #' @import xml2
 #' @importFrom magrittr "%>%"
-#'
+
 remove_colours <- function(file){
 
   ##Create a Tempfolder

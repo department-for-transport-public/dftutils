@@ -24,6 +24,7 @@ The package contains the following functions:
 
 * `clean_metadata`: Remove personal information from the metadata of an ODS file and add tags if you want.
 * `remove_colours`: Drop font colours from an ODS file in favour of using automatic font colour.
+* `a1_heading`: format A1 cells in all sheets to have a Heading style.
 * `convert_to_ods`: Automatic conversion of xlsx files to ods in Cloud R.
 
 ### Sharepoint
