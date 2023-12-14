@@ -1,6 +1,6 @@
 #' @title Remove creator names from the metadata of an ods file and add new tags if wanted
 #' @param file name of an ods file to edit the metadata
-#' @param tags optional tags to add to the file. Defaults to
+#' @param tags optional tags to add to the file. Defaults to NULL
 #' @export
 #' @name clean_metadata
 #'
@@ -11,6 +11,8 @@ clean_metadata <- function(file, tags = NULL){
 
   ##Tempfolder
   tempfolder <- tempdir()
+  ##Check it's empty
+  unlink(list.files(tempfolder, full.names = TRUE), recursive = TRUE)
   ##Unzip your ods
   unzip(file, exdir = tempfolder)
 
