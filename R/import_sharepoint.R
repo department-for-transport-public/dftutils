@@ -16,13 +16,6 @@ import_sharepoint <- function(file, site, drive, destination = NULL) {
 
   drive <- site$get_drive(drive)
 
-  if(!is.null(destination)){
-    if(!dir.exists(file.path(destination))){
-      stop("folder ", gsub("(^.*[/]).*", "\\1", file.path(destination)),
-           "does not exist in this directory")
-    }
-  }
-
   ##If no location, just put file at top location in wd
   if(is.null(destination)){
     destination = gsub("^.*[/]", "", file)
