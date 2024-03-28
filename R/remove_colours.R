@@ -10,8 +10,9 @@ remove_colours <- function(file){
 
   ##Create a Tempfolder
   tempfolder <- tempdir()
-  ##Check it's empty
-  unlink(list.files(tempfolder, full.names = TRUE), recursive = TRUE)
+  #Create a directory inside it to zip to
+  tempfolder <- file.path(tempfolder, "ods_content")
+  dir.create(tempfolder)
 
   ##Unzip your ods
   unzip(file, exdir = tempfolder)
