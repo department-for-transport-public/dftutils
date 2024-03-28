@@ -9,8 +9,9 @@
 a1_heading <- function(file){
   ##Create a Tempfolder
   tempfolder <- tempdir()
-  ##Check it's empty
-  unlink(list.files(tempfolder, full.names = TRUE), recursive = TRUE)
+  #Create a directory inside it to zip to
+  tempfolder <- file.path(tempfolder, "ods_content")
+  dir.create(tempfolder)
 
   ##Unzip your ods
   unzip(file, exdir = tempfolder)
@@ -39,5 +40,8 @@ a1_heading <- function(file){
 
   xml2::write_xml(content, file.path(tempfolder, "content.xml"))
 
-  dftutils:::zip_tmp_to_path(tempfolder, file)
+  zip_tmp_to_path(tempfolder, file)
+
+  ##Clean up after yourself
+  unlink(list.files(tempfolder, full.names = TRUE), recursive = TRUE)
 }
