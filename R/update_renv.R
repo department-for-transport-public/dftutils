@@ -47,7 +47,19 @@ update_renv <- function(lockfile_path = "renv.lock"){
 
 }
 
-##Find and compare target version with current version
+#' Check and Update Package Version
+#'
+#' This function checks if the version of a package in the `renv` lockfile is less than the specified target version.
+#' If it is, the package version is updated in the lockfile.
+#'
+#' @param package_deets The details of the package from the `renv` lockfile.
+#' @param problem_libs The data frame containing the list of problem packages and their target versions.
+#' @param lockfile_path The path to the `renv` lockfile.
+#'
+#' @return Messages indicating whether the package was updated or already at the correct version.
+#'
+#' @importFrom renv record
+#'
 check_package_v <- function(package_deets, problem_libs, lockfile_path){
   target_version <-
     problem_libs[problem_libs$package == package_deets$Package,]
