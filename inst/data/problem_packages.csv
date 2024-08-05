@@ -13,6 +13,6 @@ mgcv,1.9-1
 DescTools,0.99.54
 nnet,7.3-19
 rpart,4.1.23
-spatial,7.3-15
+spatial,7.3-17
 survival,3.7-0
 jsonlite,1.8.8
