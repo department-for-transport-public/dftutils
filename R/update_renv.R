@@ -10,7 +10,7 @@
 #'
 #' @importFrom utils packageVersion read.csv
 #' @importFrom renv lockfile_read
-#' @importFrom purrr map
+#' @importFrom purrr walk
 #'
 #' @examples
 #' \dontrun{
@@ -38,7 +38,7 @@ update_renv <- function(lockfile_path = "renv.lock"){
   } else{
 
     ##Loop over to check which ones are dodgy, and replace them
-    purrr::map(.x = libs_versions,
+    purrr::walk(.x = libs_versions,
                .f = check_package_v,
                problem_libs = problem_libs,
                lockfile_path = lockfile_path)
