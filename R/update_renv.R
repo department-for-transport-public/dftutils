@@ -64,11 +64,11 @@ check_package_v <- function(package_deets, problem_libs, lockfile_path){
   target_version <-
     problem_libs[problem_libs$package == package_deets$Package,]
 
-  if (as.numeric(gsub("[[:punct:]]", "", package_deets$Version)) <
-      as.numeric(gsub("[[:punct:]]", "", target_version$version))) {
+  if (as.numeric(paste0("0.", gsub("[[:punct:]]", "", package_deets$Version))) <
+      as.numeric(paste0("0.", gsub("[[:punct:]]", "", target_version$version)))) {
 
     ##Record in the lockfile if different
-    renv::record(
+    record(
       records = paste(target_version$package, target_version$version, sep = "@"),
       lockfile = lockfile_path
     )
