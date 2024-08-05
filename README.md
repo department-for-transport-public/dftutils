@@ -39,5 +39,6 @@ The package contains the following functions:
 * `round`: Mathematical rounding function which rounds values which end in 5 up, in contrast to the default behaviour of R (round to even).
 * `writeClipboard`: Write a data frame to an appropriately sized clipboard in Windows.
 * `sqlConnect`: Connection string to a SQL server using odbc.
+* `update_renv`: Update a renv lockfile to work with the latest Cloud R version of R (3.4.1)
 
 
