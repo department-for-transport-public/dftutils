@@ -11,11 +11,6 @@
 #' @importFrom utils packageVersion read.csv
 #' @importFrom renv lockfile_read
 #' @importFrom purrr walk
-#'
-#' @examples
-#' \dontrun{
-#' update_renv("path/to/your/renv.lock")
-#' }
 
 update_renv <- function(lockfile_path = "renv.lock"){
 
