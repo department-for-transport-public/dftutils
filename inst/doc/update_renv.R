@@ -4,6 +4,6 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-## ----setup--------------------------------------------------------------------
+## ----setup, message=FALSE, echo = FALSE---------------------------------------
 library(dftutils)
 
