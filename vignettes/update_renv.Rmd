@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r setup, message=FALSE, echo = FALSE}
 library(dftutils)
 ```
 
@@ -34,4 +34,12 @@ You have a couple of choices, you can use the package both inside and outside th
 
 2. Run the command `dftutils::update_renv()`. You don't need to specify the location of your lockfile.
 
-3. The command will automatically check and update your lockfile
+3. The command will automatically check and update your lockfile, and you can then proceed to restore your renv library.
+
+### Using it outside the project
+
+1. Make sure you're working outside of the project! You don't need to install dftutils as if you're reading this vignette, presumably you already have it.
+
+2. Run the command `dftutils::update_renv("<PATH TO YOUR LOCKFILE HERE>")`. E.g. for the lockfile for this repository, I would run `dftutils::update_renv("dftutils/renv.lock")`.
+
+3. The command will automatically check and update your lockfile. You can open your project as normal, and can then proceed to restore your renv library.
