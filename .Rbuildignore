@@ -3,3 +3,9 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 security_check.md
+^doc$
+^Meta$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$

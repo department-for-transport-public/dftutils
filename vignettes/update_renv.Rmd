@@ -1,0 +1,45 @@
+---
+title: "update_renv"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{update_renv}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, message=FALSE, echo = FALSE}
+library(dftutils)
+```
+
+## When to use update_renv
+
+The `update_renv()` function is designed to be used alongside the update to R from version 3.1.X to 3.4.X. Usually, use of the `renv` package is ideal in these circumstances, as it allows you to move R versions while keeping the same package versions (and your code functionality!). However, the change between these two versions of R includes breaking changes to the versioning of a few packages. 
+
+This function works by updating the lockfile associated with a renv project. This updates only those packages which will break renv, leaving as many packages unaffected as possible.
+
+## How to use update_renv
+
+You have a couple of choices, you can use the package both inside and outside the project in question.
+
+### Using it inside the project
+
+1. Open up your project, and install `dftutils` again (you'll need to do this because it's not in your project library)
+
+2. Run the command `dftutils::update_renv()`. You don't need to specify the location of your lockfile.
+
+3. The command will automatically check and update your lockfile, and you can then proceed to restore your renv library.
+
+### Using it outside the project
+
+1. Make sure you're working outside of the project! You don't need to install dftutils as if you're reading this vignette, presumably you already have it.
+
+2. Run the command `dftutils::update_renv("<PATH TO YOUR LOCKFILE HERE>")`. E.g. for the lockfile for this repository, I would run `dftutils::update_renv("dftutils/renv.lock")`.
+
+3. The command will automatically check and update your lockfile. You can open your project as normal, and can then proceed to restore your renv library.

@@ -16,8 +16,3 @@ A message indicating which problem packages were identified, and their updated v
 This function checks the versions of packages in an `renv` lockfile against a list of known packages which are incompatible with the upgraded version of R.
 If any problem packages are found, they are replaced with appropriate versions in your lock file.
 }
-\examples{
-\dontrun{
-update_renv("path/to/your/renv.lock")
-}
-}
