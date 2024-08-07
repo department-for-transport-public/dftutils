@@ -9,7 +9,7 @@ Authors@R:
     person("Charlie", "Howe", , "charlie.howe@dft.gov.uk", role = c("aut")))
 Description: Package of basic utility functions which have broad applications across R coding packages.
 License: MIT + file LICENSE
-Imports: openxlsx, 
+Depends: openxlsx, 
   stringr, 
   zip, 
   xml2, 
