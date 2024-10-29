@@ -1,9 +1,9 @@
 pandoc: 3.1.11
-pkgdown: 2.1.0
+pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   update_renv: update_renv.html
-last_built: 2024-08-19T12:13Z
+last_built: 2024-10-29T12:15Z
 urls:
   reference: https://department-for-transport-public.github.io/dftutils/reference
   article: https://department-for-transport-public.github.io/dftutils/articles
